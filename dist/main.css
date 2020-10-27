@@ -92,8 +92,7 @@
     box-shadow: 0px 0px 6px #e3e3e3;
     transition: 1s;
   }
-  .site:hover
-   {
+  .site:hover,.add-site:hover{
     box-shadow: 0px 0px 15px #e3e3e3;
   }
 
@@ -173,9 +172,7 @@
   .site-wrapper:hover .site-remove-pc-btn {
     visibility: visible;
   }
-   .add-site:hover {
-      box-shadow: 4px 4px 10px #5e5eec;
-    }
+  
     @media(max-width:550px){
       .search-form {
         max-width: 300px;

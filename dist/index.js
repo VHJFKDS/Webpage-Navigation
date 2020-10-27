@@ -4,38 +4,35 @@ class Site {
         {
           title: "掘金",
           url: "https://juejin.im",
-        //   desc: "程序员社区",
         },
         {
           title: "百度",
           url: "https://www.baidu.com",
-        //   desc: "搜索引擎",
         },
         {
           title: "bilibili",
           url: "https://www.bilibili.com",
-        //   desc: "二次元网站",
         },
         {
-          title: "acfun",
-          url: "https://www.acfun.cn",
-        //   desc: "搜索引擎",
+          title: "qq邮箱",
+          url: "https://email.qq.com",
         },
         {
           title: "weibo",
           url: "https://www.weibo.com",
-        //   desc: "新浪微博",
         },
         {
           title: "语雀",
           url: "https://yuque.com",
-        //   desc: "阿里笔记神器",
+        },
+        {
+          title: "腾讯课堂",
+          url: "https://ke.qq.com",
         },
       ];
       this.loadSites();
       this.renderSites();
     }
-    // addSite(title, url, desc) {
 
     addSite(title, url) {
       if (!url.match(/^https?:\/\//)) {
@@ -44,7 +41,6 @@ class Site {
       this.siteArr.push({
         title,
         url,
-        // desc,
       });
       this.renderSites();
     }
@@ -97,19 +93,7 @@ class Site {
       bindSlideSiteEvent();
     }
   }
-//   ${desc}
 
-//   function loadBackgroundImage() {
-//     const height = $(window).height();
-//     const width = $(window).width();
-//     const topic = "universe";
-//     const url = `https://source.unsplash.com/${width}x${height}/?${topic}`;
-//     const img = new Image();
-//     img.src = url;
-//     img.onload = () => {
-//       $("#bgImage").attr("src", url).fadeIn();
-//     };
-//   }
   function bindAddSiteEvent() {
     $(".add-site").on("click", function (e) {
       console.log(e.currentTarget);
@@ -117,8 +101,6 @@ class Site {
       if (!title) return;
       const url = window.prompt("请输入网站地址");
       if (!url) return;
-    //   const desc = window.prompt("请输入网站描述");
-    //   s.addSite(title, url, desc);
     s.addSite(title, url);
     });
   }
@@ -214,7 +196,6 @@ class Site {
       s.saveSites();
     };
   }
-  // loadBackgroundImage();
   s = new Site();
   bindAddSiteEvent();
   bindOpenSiteEvent();
