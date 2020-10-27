@@ -23,6 +23,7 @@
 .icon-add{
     width: 32px;
     height: 32px;
+    margin: 14px;
 }
 
   #particles-js {
@@ -37,15 +38,15 @@
     margin: auto;
     max-width: 640px;
     display: flex;
+    height: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   .search-form {
-    margin-top: 26px;
-    max-width: 560px;
-    margin-left: auto;
-    margin-right: auto;
+    margin:30px;
+    /* min-width: 540px; */
+    
     display: flex;
   }
   .search-form input {
@@ -79,13 +80,12 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-top: 30px;
   }
   .site,
   .add-site {
     display: flex;
+    margin: 12px;
     width: 135px;
-    margin-bottom: 20px;
     border-radius: 10px;
     background-color: #fff;
     overflow: hidden;
@@ -169,13 +169,24 @@
   }
   
 
-  .site {
-    margin-right: 24px;
-  }
+ 
   .site-wrapper:hover .site-remove-pc-btn {
     visibility: visible;
   }
-  .site:hover,
-    .add-site:hover {
+   .add-site:hover {
       box-shadow: 4px 4px 10px #5e5eec;
+    }
+    @media(max-width:550px){
+      .search-form {
+        max-width: 300px;
+      }
+      .site-list {
+        max-width: 320px;
+      }
+
+    }
+    @media(min-width:560px){
+      .search-form {
+        min-width: 540px;
+      }
     }
