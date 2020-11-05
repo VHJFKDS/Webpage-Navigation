@@ -15,7 +15,7 @@ class Site {
         },
         {
           title: "qq邮箱",
-          url: "https://email.qq.com",
+          url: "https://mail.qq.com",
         },
         {
           title: "weibo",
