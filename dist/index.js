@@ -83,7 +83,7 @@ class Site {
               </div>
               <div class="site-remove-mobile-btn">删除</div>
               <div class="site-remove-pc-btn">
-              <img class="icon-remove" src="../img/删除.svg"></img>
+              <img class="icon-remove" src="./img/删除.svg"></img>
               </div>
             </div>
           </li>`;
